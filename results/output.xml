@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20230716 13:02:33.822" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\rob\OneDrive\Documents\MyDev\robsarro-test\tests">
+<suite id="s1-s1" name="Landing-Page" source="C:\Users\rob\OneDrive\Documents\MyDev\robsarro-test\tests\landing-page.robot">
+<kw name="Given I Navigate To Landing Page" library="common_Keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230716 13:02:34.015" level="INFO">Opening browser 'chrome' to base url 'https://www.robsarro.com'.</msg>
+<status status="PASS" starttime="20230716 13:02:34.014" endtime="20230716 13:02:38.291"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:34.014" endtime="20230716 13:02:38.291"/>
+</kw>
+<test id="s1-s1-t1" name="Langing Page Loads" line="10">
+<kw name="Then I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${logo_image}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.292" endtime="20230716 13:02:38.311"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.292" endtime="20230716 13:02:38.311"/>
+</kw>
+<tag>001</tag>
+<status status="PASS" starttime="20230716 13:02:38.291" endtime="20230716 13:02:38.311"/>
+</test>
+<test id="s1-s1-t2" name="Validate Header Logo Is Visible" line="14">
+<kw name="Then I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${logo_image}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.313" endtime="20230716 13:02:38.325"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.313" endtime="20230716 13:02:38.326"/>
+</kw>
+<tag>002</tag>
+<status status="PASS" starttime="20230716 13:02:38.312" endtime="20230716 13:02:38.326"/>
+</test>
+<test id="s1-s1-t3" name="Validate Logo Title Shows Rob Sarro" line="18">
+<kw name="Then I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_title}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.327" endtime="20230716 13:02:38.340"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.327" endtime="20230716 13:02:38.340"/>
+</kw>
+<tag>003</tag>
+<status status="PASS" starttime="20230716 13:02:38.326" endtime="20230716 13:02:38.341"/>
+</test>
+<test id="s1-s1-t4" name="Validate Subtitle Text" line="22">
+<kw name="Then I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_subtitle}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.342" endtime="20230716 13:02:38.355"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.342" endtime="20230716 13:02:38.355"/>
+</kw>
+<tag>004</tag>
+<status status="PASS" starttime="20230716 13:02:38.341" endtime="20230716 13:02:38.355"/>
+</test>
+<test id="s1-s1-t5" name="Validate Subtitle Content Text" line="26">
+<kw name="Then I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_subtitle_content}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.356" endtime="20230716 13:02:38.369"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.356" endtime="20230716 13:02:38.369"/>
+</kw>
+<tag>005</tag>
+<status status="PASS" starttime="20230716 13:02:38.356" endtime="20230716 13:02:38.370"/>
+</test>
+<test id="s1-s1-t6" name="Validate Email Logo is Visible" line="30">
+<kw name="Given I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_email_logo}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.371" endtime="20230716 13:02:38.386"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.371" endtime="20230716 13:02:38.386"/>
+</kw>
+<tag>006</tag>
+<status status="PASS" starttime="20230716 13:02:38.371" endtime="20230716 13:02:38.386"/>
+</test>
+<test id="s1-s1-t7" name="Validate Linkedin Logo is Visible" line="34">
+<kw name="Given I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_linkedin_logo}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.387" endtime="20230716 13:02:38.400"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.387" endtime="20230716 13:02:38.400"/>
+</kw>
+<tag>007</tag>
+<status status="PASS" starttime="20230716 13:02:38.387" endtime="20230716 13:02:38.401"/>
+</test>
+<test id="s1-s1-t8" name="Validate Goodreads Logo is Visible" line="38">
+<kw name="Given I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_goodreads_logo}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.402" endtime="20230716 13:02:38.414"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.402" endtime="20230716 13:02:38.414"/>
+</kw>
+<tag>008</tag>
+<status status="PASS" starttime="20230716 13:02:38.401" endtime="20230716 13:02:38.415"/>
+</test>
+<test id="s1-s1-t9" name="Validate Email Value In Header Email Logo" line="42">
+<kw name="Given I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_href_email_link}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.416" endtime="20230716 13:02:38.429"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.416" endtime="20230716 13:02:38.429"/>
+</kw>
+<tag>009</tag>
+<status status="PASS" starttime="20230716 13:02:38.415" endtime="20230716 13:02:38.430"/>
+</test>
+<test id="s1-s1-t10" name="Validate Linkedin Value In Header Linkedin Logo" line="46">
+<kw name="Given I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_href_linkedin_link}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.431" endtime="20230716 13:02:38.445"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.431" endtime="20230716 13:02:38.445"/>
+</kw>
+<tag>010</tag>
+<status status="PASS" starttime="20230716 13:02:38.430" endtime="20230716 13:02:38.446"/>
+</test>
+<test id="s1-s1-t11" name="Validate Goodreads Value In Header Goodreads Logo" line="50">
+<kw name="Given I Validate Single Element Is Visible" library="common_Keywords">
+<arg>${header_href_goodreads_link}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230716 13:02:38.447" endtime="20230716 13:02:38.462"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.447" endtime="20230716 13:02:38.462"/>
+</kw>
+<tag>011</tag>
+<status status="PASS" starttime="20230716 13:02:38.447" endtime="20230716 13:02:38.462"/>
+</test>
+<kw name="Then I Close Browser" library="common_Keywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230716 13:02:38.463" endtime="20230716 13:02:40.542"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:38.463" endtime="20230716 13:02:40.542"/>
+</kw>
+<status status="PASS" starttime="20230716 13:02:33.843" endtime="20230716 13:02:40.542"/>
+</suite>
+<status status="PASS" starttime="20230716 13:02:33.823" endtime="20230716 13:02:40.544"/>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">001</stat>
+<stat pass="1" fail="0" skip="0">002</stat>
+<stat pass="1" fail="0" skip="0">003</stat>
+<stat pass="1" fail="0" skip="0">004</stat>
+<stat pass="1" fail="0" skip="0">005</stat>
+<stat pass="1" fail="0" skip="0">006</stat>
+<stat pass="1" fail="0" skip="0">007</stat>
+<stat pass="1" fail="0" skip="0">008</stat>
+<stat pass="1" fail="0" skip="0">009</stat>
+<stat pass="1" fail="0" skip="0">010</stat>
+<stat pass="1" fail="0" skip="0">011</stat>
+</tag>
+<suite>
+<stat pass="11" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="11" fail="0" skip="0" id="s1-s1" name="Landing-Page">Tests.Landing-Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

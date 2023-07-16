@@ -1,0 +1,4 @@
+[console_scripts]
+rfswarm = rfswarm_manager.rfswarm:RFSwarm
+rfswarm-manager = rfswarm_manager.rfswarm:RFSwarm
+

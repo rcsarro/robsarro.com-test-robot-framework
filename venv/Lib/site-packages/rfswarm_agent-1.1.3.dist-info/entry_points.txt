@@ -1,0 +1,3 @@
+[console_scripts]
+rfswarm-agent = rfswarm_agent.rfswarm_agent:RFSwarm
+

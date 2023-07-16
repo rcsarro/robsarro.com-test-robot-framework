@@ -1,0 +1,4 @@
+robotframework
+webtest>=2.0
+jsonpatch
+jsonpointer
